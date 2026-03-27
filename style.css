@@ -10,6 +10,9 @@ body {
   text-align: center;
   overflow: hidden;
 }
+body {
+  background: red !important;
+}
 
 .container {
   background: white;
