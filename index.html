@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PASSWORD SCREEN -->
+<div class="container" id="passwordBox">
+  <h2>Enter Secret Code 💌</h2>
+  <input type="password" id="password" placeholder="Enter code">
+  <button onclick="checkPassword()">Unlock 🔓</button>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="container hidden" id="countdownBox">
+  <h2>Wait for your surprise ⏳</h2>
+  <h1 id="countdown">5</h1>
+</div>
+
+<!-- MAIN PAGE -->
+<div class="container hidden" id="mainBox">
+  <h1 id="typing"></h1>
+  <button onclick="startSurprise()">🎁 Start Surprise</button>
+</div>
+
+<!-- SURPRISE -->
+<div id="surprise" class="hidden">
+  <h2>Happy Birthday ABI ❤️</h2>
+
+  <!-- SLIDESHOW -->
+  <div class="slideshow">
+    <img src="photo1.jpg.jpeg">
+    <img src="photo2.jpg.jpeg">
+    <img src="photo3.jpg.jpeg">
+    <img src="photos.jpg.jpeg">
+    <img src="photos4.jpg.jpeg">
+  </div>
+
+  <!-- VIDEO -->
+  <video controls autoplay width="250px" muted height="250px">
+    <source src="./video.mp4" type="video/mp4">
+  </video>
+
+  <!-- LETTER -->
+  <div class="letter">
+    <p>
+      Happy Birthday 🎂
+
+I just wanted to make something small for you 😊
+
+You’re genuinely a really special person,
+and I’m glad I got to know you.
+
+No pressure, no expectations —
+just wanted to see you smile today 💖
+
+Have an amazing year ahead ✨
+
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
